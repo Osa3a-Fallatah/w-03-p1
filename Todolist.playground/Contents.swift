@@ -18,17 +18,18 @@ struct List {
     
     func printAllItems() {
         for lop in items
-            {  print (lop)  }
+        {  print (lop)  }
     }
     mutating func updateItem (selectindx:Int , newItemTitle:String, isCompelete:TaskStatus){
         self.items[selectindx].taskTitle = newItemTitle
         self.items[selectindx].taskStatus = isCompelete
     }
+    // show completed items first
     mutating func sortItemByStatus(){
-        self.items.sorted(by: )
+        self.items = items.sorted{$0.taskStatus.hashValue < $1.taskStatus.hashValue}
     }
 }
-// class for functions use(enum , struct Item ,struct List) and there content
+   // class for functions use(enum , struct Item ,struct List) and there content
 class ToDo {
     var lists: [List] = []
     
@@ -52,10 +53,10 @@ class ToDo {
     func updateListTitle (selcectListNumber:Int ,newTitleForList:String){
         if lists.count  > selcectListNumber {
             lists[selcectListNumber].listTitle = newTitleForList}
-       else {print("Error -list Index out of range-\(lists.count) ")}
+        else {print("Error -list Index out of range-\(lists.count) ")}
     }
     
-   
+    
 }
 
 
@@ -69,13 +70,13 @@ list_1.addNewItem(item: Item(taskTitle: "go to collage", taskStatus: .completed)
 list_1.addNewItem(item: Item(taskTitle: "learn new cods stay till 5pm", taskStatus: .pending))
 list_1.addNewItem(item: Item(taskTitle: "do Tasks in Project", taskStatus:.completed))
 list_1.addNewItem(item: Item(taskTitle: "Grade Projects", taskStatus: .pending))
+list_1.sortItemByStatus()
 list_1.printAllItems()
 list_1.updateItem(selectindx: 2, newItemTitle: "finish project", isCompelete: .pending)
 var list_2 = List(listTitle: "Gym list")
 myLists.addNewList(list: list_2)
 myLists.updateListTitle(selcectListNumber: 1, newTitleForList: "work list")
 myLists.printAllList()
-list_1.printAllItems()
 
 
 
