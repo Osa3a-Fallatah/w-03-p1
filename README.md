@@ -1,5 +1,4 @@
 # w-03-p1
-To do list
 
 ‪‪To do list :‬‬
 
@@ -9,6 +8,14 @@ To do list
 ‪‪Also save these items in one list‬‬
 
 ‪‪The user can have more than one list .‬‬
+
+the code contain:
+
+- creat enum as  ture or false status
+-  struct for items (-Tasktitle- and enum status: if complet or not)
+-  struct to list  many (struct Item) as arry with some functions (add,delete,print,update,sort)
+-  class for functions use(struct List) and its content theres (add,print,delete,update)
+
 ‪‪ ‬‬
 ‪‪Features:‬‬
 
@@ -23,8 +30,8 @@ To do list
 ‪Upcoming features:‬
 
 ‪Date of creation‬
-
 ‪Add more details ‬
+
 
 
 
