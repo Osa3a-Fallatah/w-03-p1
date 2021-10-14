@@ -1,4 +1,4 @@
-# Note  
+# Notes  
 
 ‪‪To do list :‬‬
 
