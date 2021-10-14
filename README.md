@@ -12,10 +12,11 @@
 the code contain:
 
 - creat enum as  ture or false status
--  struct for items (-Tasktitle- and enum status: if complet or not)
--  struct to list  many (struct Item) as arry with some functions (add,delete,print,update,sort)
--  class for functions use(struct List) and its content theres (add,print,delete,update)
+-  struct for items (-Task title- and enum status: if complet or not)
+-  struct to list  many ( Items) in arry with some functions (add,delete,print,update,sort)
+-  class for functions use (struct List) and its content theres (add,print,delete,update)
 
+two instance : one to  additems and the other for lists.
 ‪‪ ‬‬
 ‪‪Features:‬‬
 
